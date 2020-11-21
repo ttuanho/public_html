@@ -1,0 +1,225 @@
+---
+---
+
+@import "minima";
+// @import "minima/syntax-highlighting";
+// @import "minima/_default_colors";
+@import "minima/jekyll-theme-hacker";
+
+body, html {
+  max-width: calc(850px - (50px * 2));
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+p img {
+  margin: 20px auto;
+  display: block;
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 14px;
+
+  code {
+    font-size: 13px !important;
+  }
+}
+
+p > pre, code {
+
+}
+
+// Pagination links
+.previous:hover, .next:hover {
+  text-decoration: none;
+}
+
+.next:after {
+  content: '\232a';
+  position: relative;
+  top: 1px;
+}
+
+.previous:before {
+  content: '\2329';
+  position: relative;
+  top: 1px;
+}
+
+// Github username
+.username {
+  position: relative;
+  top: -1px;
+}
+
+// Language circle
+.language-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  margin: 0 6px 0 0;
+  border-radius: 50%;
+  filter: saturate(1.45);
+}
+
+// Post topics
+.topics {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+
+  span {
+    background: #f1f1f1;
+    padding: 2px 5px 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    text-transform: lowercase;
+
+    &:first-child {
+      margin-right: 2px;
+    }
+
+    &:not(:first-child) {
+      margin: 0 2px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 850px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Navbar
+.site-header {
+  border-top: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+// Navbar title
+.site-title {
+  font-weight: bold;
+  // color: #555 !important;
+  color: #ffffff !important;
+}
+
+// Page header
+.post-header {
+  display: none;
+}
+
+// Post link
+.post-link {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+// Navbar pages
+.page-link {
+  font-weight: bold;
+  color: #555 !important;
+  // color: #ffffff !important;
+}
+
+// Mobile burger menu
+.site-nav {
+  top: 19px;
+  z-index: 999;
+}
+
+// Markdown page content
+.page-content {
+  small.written-by {
+    display: block;
+    margin-bottom: 20px;
+    color: #777;
+  }
+
+  .markdown-link {
+    float: left;
+    display: none;
+    position: relative;
+    margin-left: -24px;
+
+    &:hover {
+      display: inline-block;
+    }
+  }
+
+  .katex-display {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  h1:after, h2:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #eaecef;
+    width: 100%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    left: 50%;
+  }
+
+  h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code {
+    font-size: 0.95em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left: -20px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+    &:hover {
+      + .markdown-link  {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// Disqus
+#disqus_thread {
+  position: relative;
+  padding: 0 15px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #FDFDFD;
+  }
+}
+
+// Markdown
+.wrapper {
+  h1, h3 {
+    font-weight: 700;
+  }
+  strong {
+    font-weight: 600;
+  }
+}
+
+.trigger {
+    margin-right: 0%;
+}
